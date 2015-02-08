@@ -2,11 +2,44 @@
 <html>
     <head>
         <style type="text/css">
-
+            .basicslider{
+                width:730px;
+                height:336px;
+                overflow: hidden;
+                position: relative;
+            }
+            .basicslider .slider-arrow{
+                width: 37px;
+                height: 62px;
+                margin: auto;
+                display: block;
+                position: absolute;
+                background-image: url('res/style/slider-arrow.png');
+            }
+            .basicslider .slider-arrow-prev{
+                top: 0; left: 2px; bottom: 0;
+            }
+            .basicslider .slider-arrow-next{
+                top: 0; right: 2px; bottom: 0;
+                background-position: -1px -149px;
+            }
         </style>
         <script data-main="lib/index" src="lib/require.js"></script>
     </head>
     <body>
-        <div id="count-sample"></div>
+        <h2>Conter Sample</h2>
+        <div id="counter-sample"></div>
+        <h2>SimpleSlider Sample</h2>
+        <div id="basicslider-sample" class="basicslider">
+            <div class="slider-item">
+                <a href="http://news.baidu.com"><img src="res/slider-1.jpg" /></a>
+            </div>
+            <div class="slider-item">
+                <a href="http://news.baidu.com"><img src="res/slider-2.jpg" /></a>
+            </div>
+            <div class="slider-item">
+                <a href="http://news.baidu.com"><img src="res/slider-3.jpg" /></a>
+            </div>
+        </div>
     </body>
 </html>
